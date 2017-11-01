@@ -4,11 +4,38 @@ author: "Franciele de Bastos"
 date: "1 de novembro de 2017"
 output: 
   bookdown::word_document2:
+    reference_docx: ../docs/template.docx
+bibliography: biblio.bib
+csl: abnt.csl
 lang: pt
-
 --- 
+
+
+```{r, eval=FALSE, echo=FALSE}
+rmarkdown::render('main.Rmd', encoding = 'UTF-8', output_dir = "../docs")
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Introdução
+  
+  Texto de exemplo para criação do modelo do primeiro parágrafo.
+  
+  Para mudar de parágrafo sempre devemos deixar uma linha em branco. 
+  Bla bla bla
+
+# Material e Métodos
+
+Texto de exemplo para criação do modelo @VanderSpek2017 do primeiro parágrafo.
+Texto de exemplo para criação do modelo do primeiro parágrafo.
+
+Texto de exemplo para criação do modelo do primeiro parágrafo.
+
+## Dados do solo
+
+Texto de exemplo para criação do modelo do primeiro parágrafo.
+Texto de exemplo para criação do modelo do primeiro parágrafo @VanderSpek2017.
+
+#Referências 
