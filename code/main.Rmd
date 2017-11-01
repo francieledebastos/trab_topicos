@@ -2,10 +2,13 @@
 title: "Untitled"
 author: "Franciele de Bastos"
 date: "1 de novembro de 2017"
-output: html_document
----
+output: 
+  bookdown::word_document2:
+lang: pt
 
-```{r}
+--- 
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
